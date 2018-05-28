@@ -1,0 +1,9 @@
+.toolbar {
+    background-color: #f5f5f5;
+    font-size:14px;
+}
+
+.toolbar span {
+    display:inline-block;
+    margin: 2px 8px;
+}

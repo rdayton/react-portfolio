@@ -1,0 +1,40 @@
+.content {
+    flex: 1 1 auto;
+    font-size:12px;
+    overflow: scroll;
+}
+
+.tab {
+    padding: 10px 15px;
+}
+
+pre {
+    padding: 5px; 
+    margin: 5px; 
+}
+.string { 
+    color: darksalmon; 
+}
+.number { 
+    color: lightgreen;
+}
+.boolean { 
+    color: cornflowerblue; 
+}
+.null { 
+    color: cornflowerblue; 
+}
+.key { 
+    color: lightblue; 
+}
+.content p {
+    padding:0 10px;
+}
+.content a {
+    color: white;
+    text-decoration: none;
+}
+
+.content a:hover, .content a:active {
+    text-decoration: underline;
+}

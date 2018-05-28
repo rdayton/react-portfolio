@@ -1,0 +1,26 @@
+h1 {
+    display:inline-block;
+    font-size: 16px;
+    margin:5px;
+}
+
+.controls {
+    float:right;
+}
+
+.controls span {
+    display:inline-block;
+    height:15px;
+    padding:5px 8px 10px 8px;
+    text-align: center;
+    width:15px;
+}
+
+.controls span:hover {
+    background-color: rgb(65, 65, 65, .1);
+
+}
+#close:hover {
+    background-color:red;
+    color: #ffffff;
+}

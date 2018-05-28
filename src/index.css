@@ -1,0 +1,16 @@
+html {
+  height: 100%;
+  width:100%;
+}
+
+body {
+  background-color:#cccccc;
+  background: url('yellowbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  height:100%;
+  margin: 0;
+  padding: 0;
+  width:100%;
+}
