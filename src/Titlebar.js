@@ -7,9 +7,9 @@ class Titlebar extends Component {
             <div className="titlebar clearfix">
                 <h1 dangerouslySetInnerHTML={{__html:this.props.title}}></h1>
                 <div className="controls">
-                    <span id="minimize">-</span>
-                    <span id="maximize">o</span>
-                    <span id="close">x</span>
+                    <span id="minimize">&#x2014;</span>
+                    <span id="maximize">&#x2610;</span>
+                    <span id="close">&#x2715;</span>
                 </div>
             </div>
         );
