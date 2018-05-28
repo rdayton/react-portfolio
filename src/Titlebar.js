@@ -5,7 +5,7 @@ class Titlebar extends Component {
     render() {
         return (
             <div className="titlebar clearfix">
-                <h1>Test</h1>
+                <h1 dangerouslySetInnerHTML={{__html:this.props.title}}></h1>
                 <div className="controls">
                     <span id="minimize">-</span>
                     <span id="maximize">o</span>

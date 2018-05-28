@@ -38,3 +38,11 @@ pre {
 .content a:hover, .content a:active {
     text-decoration: underline;
 }
+
+.comment {
+    color: lightgreen;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}

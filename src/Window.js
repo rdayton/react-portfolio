@@ -11,22 +11,23 @@ class Window extends Component {
         super(props)
 
         this.state = {
-            view: "about"
+            view: "about", 
+            title: "<span  class='json'>{ }</span>About.json"
         }
         this.changeView = this.changeView.bind(this)
     }
 
-    changeView(view) {   
-        console.log(view)     
+    changeView(title, view) {       
         this.setState({
-            view: view 
+            view: view, 
+            title: title, 
         })
     }
 
     render() {
         return (
             <div className="window">
-                <Titlebar />
+                <Titlebar title={this.state.title} />
                 <Toolbar />
                 <div id="contentContainer">
                     <Sidebar changeView = {this.changeView} />

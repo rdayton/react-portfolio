@@ -23,3 +23,9 @@
 #contentContainer > div {
     background-color: #222222;
 }
+
+.json {
+    color:yellow;
+    display: inline-block;
+    margin-right:6px;
+}

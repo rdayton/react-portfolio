@@ -32,7 +32,6 @@ class Content extends Component {
     }
 
     loadData() {
-        //this.setState({isLoading:true})
         var API = "https://api.github.com/repos/rdayton/";        
         return fetch(API + this.props.view)
             .then(response => response.json())
@@ -47,7 +46,6 @@ class Content extends Component {
     
     componentDidUpdate(prevProps, prevState) {
         if (this.state.data === null) {
-            // At this point, we're in the "commit" phase, so it's safe to load the new data.
             this.loadData();
         }
     }
@@ -76,10 +74,13 @@ class Content extends Component {
                     <div className="tab"><span className="json">{"{ }"}</span>About.json</div>
                 }   
                 {this.props.view !== "about" && !this.state.isLoading &&
-                    <div className="github">
+                    <div className="github">                    
                         <p className="description">{this.state.data.description}</p>
                         <p>For more information visit: <a href={"https://github.com/rdayton/" + this.props.view}>https://github.com/rdayton/{this.props.view}</a>.</p>
                         <pre dangerouslySetInnerHTML={{__html: highlightSyntax(JSON.stringify(this.state.data, null, 4))}}></pre>
+                    { this.state.data.toString().includes("rate limit exceeded") &&
+                        <p class="comment">// TODO: fix rate limit exceeded error</p>
+                    }
                     </div>
                 }                
             </div>

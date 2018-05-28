@@ -9,6 +9,9 @@
 .icon-wrap {
     flex:0 0 60px;
 }
+.icon-wrap .active {
+    color:#ffffff;
+}
 .details-wrap {
     background-color:#333333;
     display:flex;
@@ -42,11 +45,7 @@
 .sidebar .box ul .active {
     background: #5A5A5A;
 }
-.json {
-    color:yellow;
-    display: inline-block;
-    margin-right:6px;
-}
+
 .sidebar ul {    
     height:100%;
     list-style: none;
