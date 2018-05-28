@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './Content.css';
 import aws from "./AWS_Certified_Logo_SAA_588x300_White.png";
 import saa from "./AWS_Certified_Tag__SAA_588x300-White.png";
-import sysops from "./AWS_Certified_Tag__SOA_1176x600-White.png";
-import dev from "./AWS_Certified_Tag__DVA_1176x600-White.png"
+import sysops from "./AWS_Certified_Tag__SOA_588x300-White.png";
+import dev from "./AWS_Certified_Tag__DVA_588x300-White.png"
 
 function highlightSyntax(json) {
     json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
