@@ -16,14 +16,14 @@ class Sidebar extends Component {
                     </ul>
                 </div>
                 <div className="details-wrap">
-                    <div className="box">
+                    <div className="column-box">
                         <p>EXPLORER</p>
                     </div>
-                    <div className="box open-files">
+                    <div className="column-box open-files">
                         <p className="box-heading">OPEN EDITORS</p>
                         <ul><li onClick={(event) => this.props.changeView( event.currentTarget.innerHTML, "about")}><span className="json">{"{ }"}</span>About.json</li></ul>
                     </div>
-                    <div className="box open-files">
+                    <div className="column-box open-files">
                         <p className="box-heading">PROJECTS</p>
                         <ul>
                             <li onClick={(event) => this.props.changeView(event.currentTarget.innerHTML,"django-rest-framework-initial-setup")}><span  className="icon icon-python"></span>Django Rest Framework Init.py</li>

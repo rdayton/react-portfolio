@@ -28,24 +28,24 @@
     font-weight: bold;
 }
 
-.box p {
+.column-box p {
     display:block;    
     padding: 5px 12px;
 }
-.box ul {
+.column-box ul {
     padding:0;    
 }
-.sidebar .box ul li {
+.sidebar .column-box ul li {
     margin:0;
     padding:5px 10px;
     text-align:left;
 }
-.sidebar .box ul li:hover {
+.sidebar .column-box ul li:hover {
     background: #3f3f3f;
     cursor: pointer;
 }
 
-.sidebar .box ul .active {
+.sidebar .column-box ul .active {
     background: #5A5A5A;
 }
 
