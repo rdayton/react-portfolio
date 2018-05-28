@@ -12,14 +12,13 @@
   height: 0;
   clear: both;
 }
-
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ou423r');
-  src:  url('fonts/icomoon.eot?ou423r#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ou423r') format('truetype'),
-    url('fonts/icomoon.woff?ou423r') format('woff'),
-    url('fonts/icomoon.svg?ou423r#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?7n2n8h');
+  src:  url('fonts/icomoon.eot?7n2n8h#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?7n2n8h') format('truetype'),
+    url('fonts/icomoon.woff?7n2n8h') format('woff'),
+    url('fonts/icomoon.svg?7n2n8h#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -39,9 +38,38 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-document-file-php:before {
+  content: "\e905";
+}
+.icon-vuejs:before {
+  content: "\e90b";
+  color: #4fc08d;
+}
+.icon-angular:before {
+  content: "\e906";
+  color: #dd0031;
+}
+.icon-react:before {
+  content: "\e907";
+  color: #61dafb;
+}
+.icon-python:before {
+  content: "\e908";
+  color: #3776ab;
+}
+.icon-php:before {
+  content: "\e909";
+  color: #777bb4;
+}
 .icon-javascript:before {
   content: "\e903";
   color: #f7df1e;
+}
+.icon-envelope-o:before {
+  content: "\e90c";
+}
+.icon-file-code-o:before {
+  content: "\e90a";
 }
 .icon-css3:before {
   content: "\e904";
@@ -75,6 +103,12 @@
 }
 .icon-embed2:before {
   content: "\ea80";
+}
+.icon-amazon:before {
+  content: "\ea87";
+}
+.icon-github:before {
+  content: "\eab0";
 }
 .icon-css32:before {
   content: "\eae6";

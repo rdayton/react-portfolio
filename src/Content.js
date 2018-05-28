@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import './Content.css';
+import aws from "./AWS_Certified_Logo_SAA_588x300_White.png";
+import saa from "./AWS_Certified_Tag__SAA_588x300-White.png";
+import sysops from "./AWS_Certified_Tag__SOA_588x300-White.png";
+import dev from "./AWS_Certified_Tag__SAA_588x300-White.png"
 
 function highlightSyntax(json) {
     json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -38,7 +42,9 @@ class Content extends Component {
             .then(data => this.setState({ data: data, isLoading: false }));
     }
     componentDidMount() {
-        if(this.props.view !== "about")
+        if(this.props.view !== "about" && this.props.view !== "github" && 
+        this.props.view !== "bugs" && this.props.view !== "contact"
+        && this.props.view !== "aws")
         {
             this.loadData()
         }
@@ -73,16 +79,39 @@ class Content extends Component {
                 {this.props.view === "about" && !this.state.isLoading &&
                     <div className="tab"><span className="json">{"{ }"}</span>About.json</div>
                 }   
-                {this.props.view !== "about" && !this.state.isLoading &&
+                {this.props.view !== "about" && 
+                    !this.state.isLoading && 
+                    this.props.view !== "github" && 
+                    this.props.view !== "bugs" &&
+                    this.props.view !== "contact" &&
+                    this.props.view !== "aws" &&
                     <div className="github">                    
                         <p className="description">{this.state.data.description}</p>
                         <p>For more information visit: <a href={"https://github.com/rdayton/" + this.props.view}>https://github.com/rdayton/{this.props.view}</a>.</p>
                         <pre dangerouslySetInnerHTML={{__html: highlightSyntax(JSON.stringify(this.state.data, null, 4))}}></pre>
                     { this.state.data.toString().includes("rate limit exceeded") &&
-                        <p class="comment">// TODO: fix rate limit exceeded error</p>
+                        <p className="comment">// TODO: fix rate limit exceeded error</p>
                     }
                     </div>
-                }                
+                }   
+                {this.props.view === "aws" &&
+                    <div class="certifications">
+                        <img src={aws} />
+                        <a href="https://aw.certmetrics.com/amazon/public/verification.aspx?code=B6MP74G2BNQQQBSC" target="_blank"><img src={saa} /></a>
+                        <a href="https://aw.certmetrics.com/amazon/public/verification.aspx?code=8S4FJWWKJ2VE1RK8" target="_blank"><img src={dev} /></a>
+                        <a href="https://aw.certmetrics.com/amazon/public/verification.aspx?code=5B78NBECLFE11MGZ" target="_blank"><img src={sysops} /></a>
+                        <p className="announcement">Pro level certifications coming soon.</p>
+                    </div>
+                }  
+                {this.props.view === "github" &&
+                    <p className="comment">// TODO: add a github link</p>
+                }  
+                {this.props.view === "bugs" &&
+                    <p className="comment">// TODO: add some weird bug stuff</p>
+                }  
+                {this.props.view === "contact" &&
+                    <p className="comment">// TODO: add a contact form</p>
+                }             
             </div>
         )
     }

@@ -46,3 +46,17 @@ pre {
 ::-webkit-scrollbar { 
     display: none; 
 }
+
+.certifications {
+    width:450px;
+    margin:25px 50px;
+}
+.certifications img {
+    max-width: 80%;
+}
+
+.certifications .announcement {
+    font-size:20px;
+    font-weight:bold;
+    padding-left:25px;
+}
