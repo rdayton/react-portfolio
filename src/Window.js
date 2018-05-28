@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Draggable from 'react-draggable';
+
 import './Window.css';
 import Titlebar from './Titlebar';
 import Toolbar from './Toolbar';
@@ -26,6 +28,7 @@ class Window extends Component {
 
     render() {
         return (
+            <Draggable>
             <div className="window">
                 <Titlebar title={this.state.title} />
                 <Toolbar />
@@ -34,6 +37,7 @@ class Window extends Component {
                     <Content view={this.state.view} />
                 </div>
             </div>
+            </Draggable>
         );
     }
 }
