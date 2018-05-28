@@ -110,7 +110,7 @@ class Content extends Component {
                     <p className="comment">// TODO: add some weird bug stuff</p>
                 }  
                 {this.props.view === "contact" &&
-                    <p className="comment">// TODO: add a contact form</p>
+                    <p className="comment">// TODO: add a contact form.  For business inquiries please contact me at <a href="mailto:robertcdayton@gmail.com">robertcdayton@gmail.com</a>.</p>
                 }             
             </div>
         )
