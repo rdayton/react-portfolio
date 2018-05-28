@@ -34,7 +34,7 @@ class Window extends Component {
                 <Toolbar />
                 <div id="contentContainer">
                     <Sidebar changeView = {this.changeView} />
-                    <Content view={this.state.view} />
+                    <Content view={this.state.view} title={this.state.title} />
                 </div>
             </div>
             </Draggable>

@@ -1,11 +1,19 @@
 .content {
     flex: 1 1 auto;
     font-size:12px;
+    max-height:600px;
     overflow: scroll;
+    position: relative;
 }
 
-.tab {
-    padding: 10px 15px;
+.tab {    
+    background: #222222;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 pre {
@@ -27,9 +35,7 @@ pre {
 .key { 
     color: lightblue; 
 }
-.content p {
-    padding:0 10px;
-}
+
 .content a {
     color: white;
     text-decoration: none;
@@ -63,4 +69,13 @@ pre {
     font-size:20px;
     font-weight:bold;
     padding-left:25px;
+}
+
+.content .icon {
+    font-size:14px;
+    margin-right: 5px;
+}
+
+.inner-content {
+    padding:0 15px;
 }
