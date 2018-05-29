@@ -26,6 +26,7 @@
 .box-heading {
     background:#4d4d4d;
     font-weight: bold;
+    margin-top:0;
 }
 
 .column-box p {
@@ -33,7 +34,7 @@
     padding: 5px 12px;
 }
 .column-box ul {
-    padding:0;    
+    padding:0;   
 }
 .sidebar .column-box ul li {
     margin:0;
@@ -52,7 +53,7 @@
 .sidebar ul {    
     height:100%;
     list-style: none;
-    margin:0;
+    margin:0 0 15px 0;
     padding:0;
 }
 

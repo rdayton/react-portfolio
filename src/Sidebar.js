@@ -15,12 +15,9 @@ class Sidebar extends Component {
                         <li onClick={(event) => this.props.changeView( "<span  class='icon icon-envelope-o'></span>Contact", "contact")}><span className="icon icon-envelope-o"></span></li>
                     </ul>
                 </div>
-                <div className="details-wrap">
-                    <div className="column-box">
-                        <p>EXPLORER</p>
-                    </div>
+                <div className="details-wrap">                    
                     <div className="column-box open-files">
-                        <p className="box-heading">OPEN EDITORS</p>
+                        <p className="box-heading">FILES</p>
                         <ul><li onClick={(event) => this.props.changeView( event.currentTarget.innerHTML, "about")}><span className="json">{"{ }"}</span>About.json</li></ul>
                     </div>
                     <div className="column-box open-files">
